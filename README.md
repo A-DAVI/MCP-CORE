@@ -137,8 +137,4 @@ mcp-rpa/
 │   └── test_agents.py
 │
 └── .gitignore
-text´´´´
-
-Métricas de conformidade
-
-Histórico de decisões técnicas      
+text´´´    
