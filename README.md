@@ -85,11 +85,7 @@ Os agents **não**:
 - Alteram estrutura do projeto
 
 ---
-
-## Estrutura de Pastas (BLOQUEADA)
-
-Esta estrutura é **oficial e imutável**.  
-Alterações fora das regras descritas aqui **quebram o projeto conceitualmente**.
+## Estrutura do Projeto
 
 ```text
 mcp-rpa/
@@ -141,125 +137,7 @@ mcp-rpa/
 │   └── test_agents.py
 │
 └── .gitignore
-Regras de Bloqueio Estrutural
-Estrutura Imutável
-Os itens abaixo não podem ser renomeados, removidos ou ter sua função alterada:
-
-server.py
-
-core/
-
-rules/
-
-contracts/
-
-templates/
-
-Estrutura Extensível
-Os itens abaixo podem crescer, respeitando o padrão existente:
-
-tools/
-Novas ferramentas podem ser adicionadas, as existentes não devem ser removidas.
-
-agents/
-Cada agent deve ser uma pasta própria contendo:
-
-prompt.md
-
-agent.py
-
-constraints.yaml
-
-tests/
-Testes devem acompanhar qualquer evolução do projeto.
-
-Regras Fundamentais de RPA (v1)
-Regras Obrigatórias
-Todo RPA deve possuir:
-
-logging estruturado
-
-configuração externa
-
-tratamento global de exceções
-
-Credenciais:
-
-É proibido hardcode
-
-Devem vir de vault ou secret manager
-
-Falhas:
-
-Devem ser previsíveis
-
-Devem gerar log contextual
-
-Regras de Qualidade
-Proibido uso de sleep sem justificativa
-
-Funções devem ser idempotentes sempre que possível
-
-Entrada e saída devem ser claramente definidas
-
-Agents — Versão Inicial
-Agent: RPA Architect
-Responsabilidades
-
-Avaliar o tipo de automação
-
-Sugerir arquitetura adequada
-
-Ajustar templates ao contexto
-
-Exemplos de decisões
-
-Batch vs event-driven
-
-Necessidade de retry
-
-Impacto de volume, frequência e criticidade
-
-Limitações
-
-Não gera código final
-
-Não altera regras
-
-Apenas recomenda
-
-Fluxo de Execução
-Usuário faz a solicitação
-
-MCP recebe o pedido
-
-MCP decide quais agents consultar
-
-Agents analisam e retornam recomendações
-
-MCP valida regras obrigatórias
-
-MCP executa a ação final
-
-MCP entrega resultado auditável
-
-Princípios do Projeto
-Regras explícitas são melhores que decisões implícitas
-
-Simplicidade antes de generalização
-
-Determinístico antes de inteligente
-
-Documentação faz parte do código
-
-MCP serve o desenvolvedor, não o contrário
-
-Evolução Futura (Planejada)
-Agent de Segurança
-
-Agent de Code Review
-
-Integração com robótica / automação física
+text´´´´
 
 Métricas de conformidade
 
